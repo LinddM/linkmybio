@@ -1,0 +1,35 @@
+{% extends 'layout.html' %}
+
+{% block body%}
+<br/>
+<div class = "container" style="text-align: center">
+    <h1 class="title is-1 is-spaced">
+        Lindsey Maite
+    </h1>
+    <br/>
+    <img class="is-rounded" src = "{{images['prof_img']}}" style = "width:15%; height:auto; border-radius: 50%">
+</div>
+
+<br/>
+<!----
+Poner los links aca!
+ href="{{}}"
+-->
+<div class="container">
+    <a class="button is-large is-fullwidth">
+        <img src = "{{images['fb_img']}}" width="8%" height="auto">
+    </a>
+    <a class="button is-large is-fullwidth">
+        <img src = "{{images['ig_img']}}" width="8%">
+    </a>
+    <a class="button is-large is-fullwidth">
+        <img src = "{{images['li_img']}}" width="8%" height="auto">
+    </a>
+    <a class="button is-large is-fullwidth">
+        <img src = "{{images['git_img']}}" width="7%" height="auto">
+    </a>
+    <a class="button is-large is-fullwidth">
+        Gmail
+    </a>
+</div>
+{% endblock %}
