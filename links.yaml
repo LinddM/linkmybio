@@ -12,19 +12,23 @@ shortbio: "brief paragraph that contains your short bio"
 # - description: this will appear as the text in the button of your link
 
 links:
-  - facebook:
+    facebook:
       enable: True
       link: "https://www.facebook.com/Lindsey.Maite001"
       description: "check my facebook"
-  - instagram:
+    instagram:
       enable: True
       link: "https://www.instagram.com/lindsey.maite/"
-      description: "How Cool my photos are in instagram :camera:"
-  - linkedin:
+      description: "cool photos I've taken"
+    linkedin:
       enable: False
       link: "https://www.linkedin.com/in/lindsey-maite-de-la-roca-11512b191/"
-      description: "lorem ipsum dorem"
-  - github:
+      description: "stuff I've done"
+    github:
       enable: False
       link: "https://github.com/LinddM"
-      description: "any other link you want your followers to see"
+      description: "some of my code"
+    gmail:
+        enable: False
+        link: "mailto:lindseydelaroca@ufm.edu"
+        description: "send me a mail"

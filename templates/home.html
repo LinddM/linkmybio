@@ -1,35 +1,35 @@
 {% extends 'layout.html' %}
 
-{% block body%}
+{% block body %}
 <br/>
-<div class = "container" style="text-align: center">
-    <h1 class="title is-1 is-spaced">
-        Lindsey Maite
-    </h1>
-    <br/>
-    <img class="is-rounded" src = "{{images['prof_img']}}" style = "width:15%; height:auto; border-radius: 50%">
-</div>
+<div class = "container" style = "border-style:solid; border-color: #FFE4E1">
+    <div class = "container" style="text-align: center; background-color:#FFFAF0">
+        <h1 class="title is-1 is-spaced">
+            Lindsey Maite
+        </h1>
+        <br/>
+        <img class="is-rounded" src = "{{images['prof_img']}}" style = "width:15%; height:auto; border-radius: 50%; border-style:solid; border-color: #FFE4E1">
+    </div>
 
-<br/>
-<!----
-Poner los links aca!
- href="{{}}"
--->
-<div class="container">
-    <a class="button is-large is-fullwidth">
-        <img src = "{{images['fb_img']}}" width="8%" height="auto">
-    </a>
-    <a class="button is-large is-fullwidth">
-        <img src = "{{images['ig_img']}}" width="8%">
-    </a>
-    <a class="button is-large is-fullwidth">
-        <img src = "{{images['li_img']}}" width="8%" height="auto">
-    </a>
-    <a class="button is-large is-fullwidth">
-        <img src = "{{images['git_img']}}" width="7%" height="auto">
-    </a>
-    <a class="button is-large is-fullwidth">
-        Gmail
-    </a>
+    <br/>
+    <div class="container">
+        <a class="button is-large is-fullwidth" href="{{links['facebook']['link']}}" title="{{links['facebook']['description']}}">
+            <img src = "{{images['fb_img']}}" width="8%" height="auto">
+        </a>
+        <a class="button is-large is-fullwidth" href="{{links['instagram']['link']}}" title="{{links['instagram']['description']}}">
+            <img src = "{{images['ig_img']}}" width="8%">
+        </a>
+        <a class="button is-large is-fullwidth" href="{{links['linkedin']['link']}}" title="{{links['linkedin']['description']}}">
+            <img src = "{{images['li_img']}}" width="8%" height="auto">
+        </a>
+        <a class="button is-large is-fullwidth" href="{{links['github']['link']}}" title="{{links['github']['description']}}">
+            <img src = "{{images['git_img']}}" width="7%" height="auto">
+        </a>
+        <a class="button is-large is-fullwidth" href="{{links['gmail']['link']}}" title="{{links['gmail']['description']}}">
+            <img src = "{{images['gmail_img']}}" width="8%" height="auto">
+        </a>
+    </div>
+    <br/>
 </div>
 {% endblock %}
+

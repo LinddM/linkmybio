@@ -6,7 +6,6 @@ app = Flask(__name__)
 data_yaml = open('links.yaml').read()
 data = yaml.load(data_yaml)
 
-
 @app.route('/')
 def main():
     images = {
@@ -14,10 +13,13 @@ def main():
         "fb_img" : url_for('static', filename = 'social/fb.png'),
         "ig_img" : url_for('static', filename = 'social/ig.png'),
         "li_img" : url_for('static', filename = 'social/li.png'),
-        "git_img" : url_for('static', filename = 'social/git.png')
+        "git_img" : url_for('static', filename = 'social/git.png'),
+        "gmail_img" : url_for('static', filename = 'social/gmail.png')
     }
-    #links = data['links']
-    return render_template('home.html', images = images)
+
+    links = data['links']
+
+    return render_template('home.html', images = images, links = links)
 
 if __name__ == '__main__':
     app.run(debug=True)
