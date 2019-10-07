@@ -10,10 +10,10 @@ data = yaml.load(data_yaml)
 def main():
     images = {
         "prof_img" : url_for('static', filename = 'profile/prof_img.jpg'),
-        "fb_img" : url_for('static', filename = 'social/fb.png'),
-        "ig_img" : url_for('static', filename = 'social/ig.png'),
-        "li_img" : url_for('static', filename = 'social/li.png'),
-        "git_img" : url_for('static', filename = 'social/git.png'),
+        "fb_img" : url_for('static', filename = 'social/facebook.png'),
+        "ig_img" : url_for('static', filename = 'social/instagram.png'),
+        "li_img" : url_for('static', filename = 'social/linkedin.png'),
+        "git_img" : url_for('static', filename = 'social/github.png'),
         "gmail_img" : url_for('static', filename = 'social/gmail.png')
     }
 
