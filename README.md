@@ -79,19 +79,33 @@ See you can add any style to your own project. These are only ideas.
 
 # Requirements
 
-- [ ] **FORK** THIS REPO!
-- [ ] Your project will read the links.yaml file and generate the webpage to start serving it as desired.
-- [ ] Project MUST compile
-- [ ] Update README.md to add a section `Usage`, where you will place the commands in order to run your bio.py
-- [ ] Add Style, suggestions "bootstrap.css"
-- [ ] Deliver it via `git tags`
-- [ ] Make sure to use/develop/fill the empty files/folders provided: `static/`, `templates/`, `bio.py` , `requirements.txt`.
+- [x] **FORK** THIS REPO!
+- [x] Your project will read the links.yaml file and generate the webpage to start serving it as desired.
+- [x] Project MUST compile
+- [x] Update README.md to add a section `Usage`, where you will place the commands in order to run your bio.py
+- [x] Add Style, suggestions "bootstrap.css"
+- [x] Deliver it via `git tags`
+- [x] Make sure to use/develop/fill the empty files/folders provided: `static/`, `templates/`, `bio.py` , `requirements.txt`.
 
 
 # Usage
 
-> put your code here
+First make sure you have git installed in your computer.
 
+Clone this repo using
+> git clone https://github.com/LinddM/linkmybio.git
+
+Once you have the code in your favorite platform, install dependencies from requirements.txt:
+> pip install -r requirements.txt
+
+or 
+
+> python -m pip install -r requirements.txt
+
+Finally, to run the program use:
+> python bio.py
+
+_Be careful when navigating in the project files_
 
 # Extras:
 - You can **add** any other attribute you like in order to add more functionalities.

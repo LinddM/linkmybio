@@ -1,6 +1,5 @@
 from flask import Flask, render_template, url_for
 import yaml
-import glob
 
 app = Flask(__name__)
 
